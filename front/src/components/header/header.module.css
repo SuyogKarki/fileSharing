@@ -1,15 +1,15 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    flex: none;
+  display: flex;
+  justify-content: space-between;
+  flex: none;
 }
 
 .header .brand h1 {
-    color: white;
-    font-family: Montserrat;
+  color: white;
+  font-family: sans-serif;
 }
 
 .header .github a {
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 2rem;
 }

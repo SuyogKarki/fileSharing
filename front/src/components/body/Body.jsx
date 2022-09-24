@@ -13,7 +13,7 @@ import { AuthContext } from '../../context/authContext';
 // import { useSelector } from 'react-redux';
 
 const RootContainer = styled.div`
-  background-color: #15d0b3;
+  background-color: #15deff;
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@ const RootContainer = styled.div`
   flex-direction: column;
 `;
 const LowerContainer = styled.div`
-  height: 86vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +33,20 @@ const Body = props => {
     <RootContainer>
       <BrowserRouter>
         {user && <Navbar />}
+
         <Routes>
-          <Route path='/' element={user ? <Container /> : <Navigate to='/login' />} />
+          <Route
+            path='/'
+            element={
+              user ? (
+                <LowerContainer>
+                  <Container />
+                </LowerContainer>
+              ) : (
+                <Navigate to='/login' />
+              )
+            }
+          />
           <Route path='/register' element={!user ? <Register /> : <Navigate to='/' />} />
           <Route path='/login' element={!user ? <Login /> : <Navigate to='/' />} />
           <Route path='/uploads' element={user ? <Uploads /> : <Navigate to='/login' />} />

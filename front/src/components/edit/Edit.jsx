@@ -39,7 +39,7 @@ const PP = styled.div`
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 1px solid #15d0b3;
+    border: 1px solid #15deff;
     border-radius: 50%;
   }
 `;
@@ -70,7 +70,7 @@ const Field = styled.div`
 `;
 const IconCont = styled.div`
   position: absolute;
-  color: #15d0b3;
+  color: #15deff;
   font-size: 20px;
   top: 10px;
   left: 10px;

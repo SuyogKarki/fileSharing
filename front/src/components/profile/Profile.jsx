@@ -35,7 +35,7 @@ const PP = styled.div`
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 1px solid #15d0b3;
+    border: 1px solid #15deff;
     border-radius: 50%;
   }
 `;

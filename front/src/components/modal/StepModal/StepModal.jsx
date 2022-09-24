@@ -15,7 +15,7 @@ const StepModal = props => {
   });
   return (
     <Modal title='Please wait' visible={show} footer={null} closable={false}>
-      <Steps direction='vertical' current={currentStep}>
+      {/* <Steps direction='vertical' current={currentStep}>
         {steps.map(step => {
           const index = steps.indexOf(step);
           if (index < currentStep) {
@@ -26,7 +26,7 @@ const StepModal = props => {
             return <Step description='' title={step} icon={<Icon type='loading' />} key={index} />;
           }
         })}
-      </Steps>
+      </Steps> */}
     </Modal>
   );
 };
